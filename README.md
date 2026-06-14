@@ -1,33 +1,120 @@
-# Foundational C# with Microsoft Certification Projects
+# Foundational C# with Microsoft Certification
 
-This repository documents my progress, hands-on projects, and coding challenges completed during the **[Foundational C# Certification](https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/)** program, a collaborative curriculum by **Microsoft** and **freeCodeCamp**.
+A comprehensive collection of projects, exercises, guided labs, and challenge solutions completed while studying the Microsoft & freeCodeCamp Foundational C# Certification.
 
-## 🚀 About This Repository
-The goal of this repository is to showcase my proficiency in C# programming and the .NET ecosystem. Each project demonstrates practical application of core programming concepts, ranging from basic syntax and decision logic to complex data handling and memory management.
+## Overview
 
-## 🛠️ Technical Skills Demonstrated
-* **Core Language:** C# 12+
-* **Framework:** .NET 8.0/9.0
-* **Development Environment:** Visual Studio / VS Code
-* **Concepts:** - Object-Oriented Programming (OOP)
-    - Data Structures (Arrays, Lists, Collections)
-    - Control Flow & Decision Logic
-    - Exception Handling & Debugging
-    - .NET Class Library integration
+This repository documents my practical journey learning C# and .NET through Microsoft's official learning path.
 
-## 📂 Project Structure
-* `Module-01-Basic-Syntax`: Introduction to variables, data types, and console operations.
-* `Module-02-Decision-Logic`: Implementing complex `if-else` and `switch` logic for business requirements.
-* `Module-03-Data-Structures`: Manipulating sequences using Arrays and Iteration (`foreach`, `for` loops).
-* `Module-04-Methods`: Structuring code for modularity and reusability.
+Rather than only completing lessons, I focused on understanding the reasoning behind each solution, debugging real problems, and improving project implementations beyond the minimum requirements.
 
-## 🔗 Credentials
-* **Certification:** [Link to your Microsoft/freeCodeCamp Certificate once earned]
-* **My Profile:** [Link to your GitHub Profile]
+## Skills Demonstrated
 
-## 📬 Contact
-- **LinkedIn:** [Your LinkedIn Profile Link]
-- **Email:** [Your Email Address]
+* C# Fundamentals
+* Variables and Data Types
+* Decision Logic
+* Arrays and Collections
+* Loops and Iteration
+* Methods and Modular Design
+* Debugging Techniques
+* Exception Handling
+* Console Application Development
+* Problem Solving
+* Algorithmic Thinking
+
+## Repository Structure
+
+### Module 01 — Basic Syntax
+
+Introduction to C# syntax, variables, literals, operators, and console interaction.
+
+### Module 02 — Decision Logic
+
+Projects focused on:
+
+* if / else statements
+* switch expressions
+* Boolean logic
+* Business rule implementation
+
+### Module 03 — Data Structures
+
+Practice with:
+
+* Arrays
+* Iteration
+* Data processing
+* Sequence manipulation
+
+### Module 04 — Methods
+
+Building reusable and maintainable code through:
+
+* Custom methods
+* Parameters
+* Return values
+* Code organization
+
+### Debugging & Exception Handling
+
+Projects demonstrating:
+
+* Debugging workflows
+* Error diagnosis
+* Exception creation and handling
+
+## Highlight Project — Console Food Game
+
+One of the most interesting projects in this repository is a console-based game where a player moves around the screen collecting food items.
+
+### Features
+
+* Real-time keyboard input
+* Random food generation
+* Multiple player states
+* Dynamic movement speed
+* Collision detection
+* Terminal boundary handling
+* Window resize detection
+
+### Technical Challenge
+
+A collision-detection bug appeared when the player's movement speed increased from 1 to 3.
+
+The original implementation checked whether:
+
+playerX == foodX && playerY == foodY
+
+This failed because the player could move several positions in a single update and skip the exact food coordinate.
+
+To solve this, collision detection was changed from point matching to range overlap detection:
+
+playerX >= foodX &&
+playerX < foodX + foods[food].Length &&
+playerY == foodY
+
+This allows food to be consumed whenever the player's position enters the food's occupied area rather than requiring an exact coordinate match.
+
+### Concepts Practiced
+
+* State Management
+* Game Loop Design
+* Collision Detection
+* Console Rendering
+* Procedural Game Programming
+
+## Certification
+
+Microsoft & freeCodeCamp Foundational C# Certification
+
+(Certificate link will be added after completion)
+
+## Contact
+
+GitHub: https://github.com/Qusai-netizen
+
+LinkedIn: [Your LinkedIn Profile]
 
 ---
-*Built with passion for clean, efficient, and scalable code.*
+
+Building strong programming fundamentals one project at a time.
